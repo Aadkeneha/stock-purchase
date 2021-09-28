@@ -13,7 +13,8 @@ btnSubmit.addEventListener("click", function calculate() {
         const currvalue = Number(inputUser[2].value) * Number(inputUser[1].value);
 
         const result = currvalue - prevalue;
-        const percent = (Math.abs(result)/inputUser[0].value) *100;
+        console.log(result);
+        const percent = (Math.abs(result)/prevalue) *100;
 
         if (result > 0) {
             outputelement.innerText = "Yippee!! You gained profit of Rs." + result + " and your profit percentage is " + percent + "%  🥳";
